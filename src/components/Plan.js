@@ -5,7 +5,7 @@ export default function Plan() {
 
 	return (
 		<div className="container mx-auto flex justify-center bg-white">
-			<div className="absolute -bottom-[31rem] rounded-tr-3xl rounded-bl-3xl rounded-br-3xl bg-white px-8 py-12 shadow lg:-bottom-44">
+			<div className="absolute -bottom-[31rem] mx-auto w-11/12 rounded-tr-3xl rounded-bl-3xl rounded-br-3xl bg-white px-8 py-12 shadow sm:w-auto lg:-bottom-44">
 				<div className="absolute left-0 -top-20 flex space-x-4 rounded-tr-2xl rounded-tl-2xl bg-white px-2 pt-2 pb-8">
 					<div
 						className={`flex cursor-pointer items-center rounded-3xl px-3 py-2 ${type === 'flight' ? 'bg-blue-500/20' : ''}`}
@@ -41,11 +41,11 @@ export default function Plan() {
 					</div>
 				</div>
 				<div className="flex flex-col items-center space-y-6 lg:flex-row lg:space-x-6 lg:space-y-0">
-					<div className="w-full rounded-3xl border-2 border-slate-300 px-6 py-8 lg:w-auto ">
+					<div className="w-full rounded-3xl border-2 border-slate-300 px-6 py-8 lg:w-auto">
 						<div className="flex items-center justify-between space-x-8">
 							<div>
-								<p className="text-lg font-medium text-slate-400">Living From</p>
-								<h5 className="text-2xl font-medium">Dubai</h5>
+								<p className="text-md font-medium text-slate-400 sm:text-lg">Living From</p>
+								<h5 className="text-xl font-medium sm:text-2xl">Dubai</h5>
 							</div>
 							{/* prettier-ignore */}
 							<svg width={40} height={40} className='cursor-pointer' viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
@@ -59,13 +59,13 @@ export default function Plan() {
 										</defs>
 									</svg>
 							<div>
-								<p className="text-lg font-medium text-slate-400">Going to</p>
-								<h5 className="text-2xl font-medium">New York</h5>
+								<p className="text-md font-medium text-slate-400 sm:text-lg">Going to</p>
+								<h5 className="text-xl font-medium sm:text-2xl">New York</h5>
 							</div>
 						</div>
 					</div>
-					<div className="rounded-3xl border-2 border-slate-300 px-6 py-8">
-						<div className="flex items-center space-x-12">
+					<div className="w-full rounded-3xl border-2 border-slate-300 px-6 py-8 sm:w-auto">
+						<div className="flex items-center justify-between space-x-4 sm:space-x-12">
 							<div>
 								<p className="flex text-lg font-medium text-slate-400">
 									Leave
@@ -80,7 +80,7 @@ export default function Plan() {
 												</defs>
 											</svg>
 								</p>
-								<h5 className="text-2xl font-medium">23 Jan, Sat</h5>
+								<h5 className="text-xl font-medium sm:text-2xl">23 Jan, Sat</h5>
 							</div>
 							{/* prettier-ignore */}
 							<svg width={40} height={40} className='cursor-pointer' viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
@@ -107,7 +107,7 @@ export default function Plan() {
 												</defs>
 											</svg>
 								</p>
-								<h5 className="text-2xl font-medium">14 Jan, Thu</h5>
+								<h5 className="text-xl font-medium sm:text-2xl">14 Jan, Thu</h5>
 							</div>
 						</div>
 					</div>

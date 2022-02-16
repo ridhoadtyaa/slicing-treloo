@@ -35,7 +35,7 @@ function App() {
 				<div className="mt-14 flex justify-center">
 					<Visitors />
 				</div>
-				<div className="mt-12 flex flex-wrap items-center justify-evenly space-x-4 md:space-x-0">
+				<div className="mt-12 flex flex-wrap items-center justify-evenly md:justify-evenly">
 					<CardSpecial
 						thumbnail={require('./assets/img/thumbnail-1.png')}
 						date="14 FEB 2022"
